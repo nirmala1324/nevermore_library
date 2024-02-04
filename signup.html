@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nevermore Library User Signup Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+        <div class="logo">
+            <img src="never.png"class="Logo">
+        </div>
+        <div class="p">
+            <p style="font-family: serif;">Please register your identity</p>
+        </div>
+        <div class="signup">
+            <p>Already a library member?</p>
+            <button class="signupbutton" type="button" onclick="window.location.href='login.html'">Login</button>
+        </div>
+        <div class="centerr">
+            <h1 style="font-family: serif;">Signup</h1>
+            <form action="process.php" method="POST" enctype="multipart/form-data">
+                <div class="regist_field">
+                    <input type="text" name="fullName" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="genderAll" style="margin-bottom: 0px; ";>Gender</div>
+                <div class="genderr">
+                    <label class="radio">
+                        <input  type="radio" name="gender" value="Female" required>Female
+                        <span></span>
+                    </label>
+                    <label class="radio">
+                        <input name="gender" type="radio" value="Male">Male
+                        <span></span>
+                    </label>
+                </div>
+                <div class="regist_field" style="height: 40px; margin-top:25px" >
+                    <div class="genderAll" style="margin-bottom: 5px";>Date of Birth</div>
+                    <input class="date" name="date" type="date" required>
+                </div>
+                <div class="regist_field">
+                    <input type="text" name="address" required>
+                    <label>Address</label>
+                </div>
+                <div class="regist_field">
+                    <input type="text" name="phoneNum" required onkeypress="return onlyNumberKey(event)" maxlength="14" minlength="12">
+                    <label>Phone Number</label>
+                </div>
+                <div class="regist_field">
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="regist_field">
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="regist_field">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="regist_field" style="height: 52px;">
+                    <input class="file" name="profpic" type="file" required>
+                    <label class="profpic">Profile Picture</label>
+                </div>
+                <input class="login" name="submitSignup" type="submit" value="Signup">
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

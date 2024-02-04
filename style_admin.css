@@ -1,0 +1,103 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),  rgba(0,0,0,0.75)),url(banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 400px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+label {
+    color: #888;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+button {
+    float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+} 
+
+button:hover{
+    opacity: .7;
+}
+
+.navbar{
+    
+    margin: auto;
+    width: 85%;
+    padding: 35px 0;
+    display: flex;
+}
+
+.Logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.foot { 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    display: flex;
+}
+
+p{
+    color: #ccc;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.error {
+    background: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+
+
